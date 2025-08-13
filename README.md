@@ -1,3 +1,18 @@
+🏏 # Cricket Score Tracker
+A sleek, real-time cricket score tracking app built with React.js, designed to simulate live match dynamics with immersive visuals and interactive logic.
+⚡ Highlights
+- 🟢 Live score updates with run/wicket tracking
+- 🔁 Auto-rotating bowlers with end-switch simulation
+- 🎯 Match stats: run rate, projected score, balls left, extras
+- 🌗 Theme toggle (dark/light) with animated transitions
+- 🔊 Audio feedback for key events (cheer & wicket)
+- 🧊 Glassmorphism UI with stadium-inspired backgrounds
+- 📱 Responsive design for desktop & mobile
+🛠 Tech Stack
+React.js, JavaScript (ES6+), CSS3, HTML5, Git
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
