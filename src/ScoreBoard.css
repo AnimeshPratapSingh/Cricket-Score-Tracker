@@ -1,0 +1,304 @@
+.scoreboard-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background-color: #588bd8;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.main-score {
+  background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%);
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.main-score h2 {
+  font-size: 42px;
+  margin: 0;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.overs {
+  color: #ffffff;
+  font-size: 18px;
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+.batsmen-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin: 24px 0;
+}
+
+.batsman-card {
+  background-color: #ffffff;
+  padding: 15px 20px;
+  border-radius: 8px;
+  border-left: 4px solid #dc2626;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+@media (prefers-color-scheme: dark) {
+  .batsman-card {
+    background-color: #1e293b;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.batsman-card:hover {
+  transform: translateY(-2px);
+}
+
+.batsman-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+.batsman-stats {
+  color: #4b5563;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+@media (prefers-color-scheme: dark) {
+  .batsman-name {
+    color: #f3f4f6;
+  }
+  .batsman-stats {
+    color: #d1d5db;
+  }
+}
+
+.section-title {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 32px 0 16px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.scorecard-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+  background: #fee2e2;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(220, 38, 38, 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+  .scorecard-table {
+    background: #471818;
+    box-shadow: 0 2px 8px rgba(220, 38, 38, 0.2);
+  }
+}
+
+.scorecard-table th {
+  background-color: #dc2626;
+  color: white;
+  padding: 12px;
+  font-weight: 600;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.scorecard-table td {
+  padding: 12px;
+  border-bottom: 1px solid #fecaca;
+  color: #111827;
+}
+
+.scorecard-table tr:last-child td {
+  border-bottom: none;
+}
+
+.scorecard-table tbody tr {
+  background-color: #fef2f2;
+  transition: background-color 0.2s ease;
+}
+
+.scorecard-table tbody tr:hover {
+  background-color: #fee2e2;
+  box-shadow: 0 2px 4px rgba(220, 38, 38, 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+  .scorecard-table td {
+    color: #f3f4f6;
+    border-bottom: 1px solid #581c1c;
+  }
+  .scorecard-table tbody tr {
+    background-color: #451a1a;
+  }
+  .scorecard-table tbody tr:hover {
+    background-color: #581c1c;
+    box-shadow: 0 2px 4px rgba(220, 38, 38, 0.2);
+  }
+}
+
+.commentary-section {
+  margin-top: 32px;
+  background: #fef2f2;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(220, 38, 38, 0.1);
+  border: 1px solid #fecaca;
+}
+
+@media (prefers-color-scheme: dark) {
+  .commentary-section {
+    background: #451a1a;
+    border: 1px solid #581c1c;
+    box-shadow: 0 2px 4px rgba(220, 38, 38, 0.2);
+  }
+}
+
+.commentary-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.commentary-item {
+  padding: 12px 16px;
+  border-bottom: 1px solid #fecaca;
+  font-size: 14px;
+  line-height: 1.5;
+  transition: all 0.2s ease;
+  margin-bottom: 4px;
+  border-radius: 4px;
+  color: #111827;
+}
+
+.commentary-item:hover {
+  background-color: #fee2e2;
+  transform: translateX(4px);
+}
+
+.commentary-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.commentary-time {
+  color: #991b1b;
+  font-size: 12px;
+  margin-right: 8px;
+  font-weight: 600;
+}
+
+.bowler-change-alert {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: slideDown 0.3s ease-out, fadeOut 0.3s ease-out 1.7s forwards;
+  z-index: 1000;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translate(-50%, -100%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .commentary-item {
+    color: #f3f4f6;
+    border-bottom: 1px solid #581c1c;
+  }
+  .commentary-item:hover {
+    background-color: #581c1c;
+  }
+  .commentary-time {
+    color: #fecaca;
+  }
+  
+  .bowler-change-alert {
+    background: linear-gradient(135deg, #991b1b 0%, #dc2626 100%);
+  }
+}
+
+.partnership-card {
+  background: linear-gradient(135deg, #991b1b 0%, #dc2626 100%);
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 24px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(220, 38, 38, 0.2);
+}
+
+.partnership-card h3 {
+  margin: 0 0 12px 0;
+  font-size: 20px;
+}
+
+.partnership-info {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+/* Animations */
+@keyframes scoreUpdate {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.score-update {
+  display: inline-block;
+  animation: scoreUpdate 0.3s ease-out;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .batsmen-info {
+    grid-template-columns: 1fr;
+  }
+  
+  .main-score h2 {
+    font-size: 32px;
+  }
+  
+  .scorecard-table {
+    font-size: 14px;
+  }
+}
