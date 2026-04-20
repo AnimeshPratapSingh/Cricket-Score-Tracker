@@ -27,8 +27,8 @@ const [bowlerEnd, setBowlerEnd] = useState('End A');
   const [bowlerHistory, setBowlerHistory] = useState([]);
   const [showBowlerChange, setShowBowlerChange] = useState(false);
 
-  const cheerAudio = new Audio(process.env.PUBLIC_URL + '/cheer.mp3');
-  const wicketAudio = new Audio(process.env.PUBLIC_URL + '/wicket.mp3');
+  const cheerAudio = new Audio('/cheer.mp3');
+const wicketAudio = new Audio('/wicket.mp3');
 
  useEffect(() => {
   document.body.className = darkMode ? '' : 'light-mode';
