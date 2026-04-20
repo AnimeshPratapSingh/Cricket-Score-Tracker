@@ -4,7 +4,7 @@ import ScoreBoard from './ScoreBoard';
 import Controls from './Controls';
 
 function App() {
-  const [fadeBowler, setFadeBowler] = useState(false);
+
 const [bowlerEnd, setBowlerEnd] = useState('End A');
   const [runs, setRuns] = useState(0);
   const [wickets, setWickets] = useState(0);
@@ -24,7 +24,6 @@ const [bowlerEnd, setBowlerEnd] = useState('End A');
   const [bowlerQueue, setBowlerQueue] = useState([]);
   const [currentBowlerIndex, setCurrentBowlerIndex] = useState(0);
   const [previousBowlerIndex, setPreviousBowlerIndex] = useState(-1);
-  const [bowlerHistory, setBowlerHistory] = useState([]);
   const [showBowlerChange, setShowBowlerChange] = useState(false);
 
   const cheerAudio = new Audio('/cheer.mp3');
